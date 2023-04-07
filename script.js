@@ -1,23 +1,11 @@
-function expandCV() {
-	var cv = document.getElementById("cv");
-	var btn = document.querySelector(".box2 button");
-	if (cv.classList.contains("expanded")) {
-		cv.classList.remove("expanded");
-		btn.innerHTML = "CV";
+function expandSection(sectionId, button) {
+	let section = document.getElementById(sectionId);
+	if (section.classList.contains("expanded")) {
+	  section.classList.remove("expanded");
+	  button.innerHTML = sectionId.charAt(0).toUpperCase() + sectionId.slice(1);
 	} else {
-		cv.classList.add("expanded");
-		btn.innerHTML = "Close";
+	  section.classList.add("expanded");
+	  button.innerHTML = "Close";
 	}
-}
-
-function expandContact() {
-	var contact = document.getElementById("contact");
-	var btn = document.querySelector(".box3 button");
-	if (contact.classList.contains("expanded")) {
-		contact.classList.remove("expanded");
-		btn.innerHTML = "Contact";
-	} else {
-		contact.classList.add("expanded");
-		btn.innerHTML = "Close";
-	}
-}
+  }
+  
