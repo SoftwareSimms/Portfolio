@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio Website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+        <div class="box box1">
+            <img class="profile-photo" src="./img/jack.jpg" alt="Profile Photo">
+            <h1>Jack Simms</h1>
+            <h5>Software Engineering Student at University of Portsmouth</h5>
+        </div>
+		<div class="box box2">
+			<div class="btn-wrapper">
+				<button class="btn-expander" onclick="expandCV()">CV</button>
+				<div class="cv" id="cv">
+					<div class="contact-details">
+						<a href="./pdf/Jack Simms Full Time CV March 23.pdf" target="_blank"><button class="btn-download">Download CV</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="box box3">
+			<div class="btn-wrapper">
+				<button class="btn-expander" onclick="expandContact()">Contact</button>
+				<div class="contact" id="contact">
+					<div class="contact-details">
+						<a href="mailto:softwaresimms@gmail.com"><div class="btn">Gmail</div></a>
+						<a href="https://github.com/softwaresimms"><div class="btn">GitHub</div></a>
+						<a href="https://www.linkedin.com/in/jacksimms77"><div class="btn">LinkedIn</div></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
