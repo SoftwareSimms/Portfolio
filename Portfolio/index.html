@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jack Simms</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+	<div class="container">
+        <div class="box box1">
+            <img class="profile-photo" src="./img/jack.jpg" alt="Profile Photo">
+            <h1>Jack Simms</h1>
+            <h5>Software Engineering Student at University of Portsmouth</h5>
+        </div>
+		<div class="box box2">
+			<div class="btn-wrapper">
+				<button class="btn-expander" onclick="expandSection('cv', this)">CV</button>
+				<div class="cv" id="cv">
+					<div class="cv details" id="cv">
+						<a href="./pdf/Jack Simms Full Time CV March 23.pdf" target="_blank"><button class="btn-download">Download CV</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="box box2">
+			<div class="btn-wrapper">
+				<button class="btn-expander" onclick="expandSection('project', this)">Projects</button>
+				<div class="project" id="project">
+					<div class="project details" id="project">
+						<a class="btn-link" href="https://softwaresimms.github.io/Project-Skeleton/"><span>Project Skeleton</span></a>
+						<a class="btn-link" href="https://softwaresimms.github.io/Buy-The-Brick/"><span>Buy The Brick</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="box box3">
+			<div class="btn-wrapper">
+				<button class="btn-expander" onclick="expandSection('contact', this)">Contacts</button>
+				<div class="contact" id="contact">
+					<div class="contact details" id="contact">
+						<a class="btn-link" href="mailto:softwaresimms@gmail.com"><span>Gmail</span></a>
+						<a class="btn-link" href="https://github.com/softwaresimms"><span>GitHub</span></a>
+						<a class="btn-link" href="https://www.linkedin.com/in/jacksimms77"><span>LinkedIn</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
