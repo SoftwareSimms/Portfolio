@@ -1,65 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Jack Simms</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <script src="script.js" defer></script>
+  <title>Jack Simms</title>
 </head>
 <body>
-	<div class="container">
-        <div class="box box1">
-            <img class="profile-photo" src="./img/jack.jpg" alt="Profile Photo">
-            <h1>Jack Simms</h1>
-            <h5>Software Engineering Student at University of Portsmouth</h5>
+  <header>Jack Simms</header>
+  <main>
+    <section id="portfolio">
+      <div class="gallery">
+
+        <!-- Add more a elements for each image -->
+        <!--start of image 1 wrapper-->
+        <div class="image-container">
+            <a href=".\IMG\yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg" class="image-link">
+                <img src=".\IMG\yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg" alt="Description of image1">
+            </a>
+            <h3>POSTER</h3>
+            <p>This drawing was ugh yeah baby just proper naughty and such</p>
+        </div><!--end of image 1 wrapper-->
+
+        <div class="image-container">
+            <a href=".\IMG\marlowe-weingart-RbN8pwcYCyM-unsplash.jpg" class="image-link">
+                <img src=".\IMG\marlowe-weingart-RbN8pwcYCyM-unsplash.jpg" alt="Description of image2">
+            </a>
+            <h3>LEAFLET</h3>
+            <p>hedgehogs are the best i do love em so oh yeh</p>
         </div>
-		<div class="box box2">
-			<div class="btn-wrapper">
-				<button class="btn-expander" onclick="expandSection('cv', this)">CV</button>
-				<div class="cv" id="cv">
-					<div class="cv details" id="cv">
-						<a href="./pdf/Jack Simms Full Time CV March 23.pdf" target="_blank"><button class="btn-download">View CV</button></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="box box2">
-			<div class="btn-wrapper">
-				<button class="btn-expander" onclick="expandSection('project', this)">Projects</button>
-				<div class="project" id="project">
-					<div class="project details" id="project">
-						<a class="btn-link" href="https://softwaresimms.github.io/Project-Skeleton/"><span>Project Skeleton</span></a>
-						<a class="btn-link" href="https://softwaresimms.github.io/Buy-The-Brick/"><span>Buy The Brick</span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="box box3">
-			<div class="btn-wrapper">
-				<button class="btn-expander" onclick="expandSection('contact', this)">Contacts</button>
-				<div class="contact" id="contact">
-					<div class="contact details" id="contact">
-						<a class="btn-link" href="mailto:softwaresimms@gmail.com"><span>Gmail</span></a>
-						<a class="btn-link" href="https://github.com/softwaresimms"><span>GitHub</span></a>
-						<a class="btn-link" href="https://www.linkedin.com/in/jacksimms77"><span>LinkedIn</span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="box box4">
-			<div class="btn-wrapper">
-				<button class="btn-expander" onclick="expandSection('poster', this)">Posters</button>
-				<div class="poster" id="poster">
-					<div class="poster details" id="poster">
-						<a href="./pdf/A3 Embracing Mistakes Agile SSE Posters(3).pdf" target="_blank"><button class="btn-download">View PDF!</button></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="script.js"></script>
+
+        <div class="image-container">
+            <a href=".\IMG\marlowe-weingart-RbN8pwcYCyM-unsplash.jpg" class="image-link">
+                <img src=".\IMG\marlowe-weingart-RbN8pwcYCyM-unsplash.jpg" alt="Description of image3">
+            </a>
+            <h3>BOOK RECCOMENDATIONS</h3>
+            <p>hedgehogs are the best i do love em so oh yeh</p>
+        </div>
+
+      </div>  <!--end of the "gallery" div containing all the "image wrappers"-->    
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Put prop bio here</p>
+      <a href=".\pdf\Jack Simms Full Time CV March 23.pdf" target="_blank">View My CV</a>
+      <h3>Contact Details</h3>
+      <p>Email: <a href="mailto:jacksimms77@gmail.com">jacksimms77@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Jack Simms, All rights reserved.</p>
+  </footer>
 </body>
 </html>
