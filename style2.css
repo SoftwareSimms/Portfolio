@@ -1,13 +1,12 @@
 /* style2.css */
-
 body {
-    font-family: Arial, sans-serif;
-    color: #f1f1f1;
-    line-height: 1.6;
-    background-color: #222;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: Arial, sans-serif;
+  color: #f1f1f1;
+  line-height: 1.6;
+  background-color: #222;
+  margin: 0;
+  padding: 0;
+}
   
   header {
     background-color: #333;
@@ -40,6 +39,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 2rem;
+    box-sizing: border-box;
   }
   
   .image-container {
@@ -101,6 +101,18 @@ body {
     main {
       flex-direction: column;
       align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .image-container {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    main {
+      padding: 1rem;
     }
   }
   
