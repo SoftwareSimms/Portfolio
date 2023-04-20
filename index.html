@@ -3,52 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style1.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style2.css">
   <title>Jack Simms</title>
 </head>
 <body>
   <header>Jack Simms</header>
+  <div class="about-wrapper">
+    <img src=".\img\jack.jpg" id="profilePhoto">
+    <h2>About Me</h2>
+    <p>Put bio here from prop</p>
+    <p>Email: <a href="mailto:jacksimms77@gmail.com">jacksimms77@gmail.com</a></p>
+    <button onclick="window.open('./pdf/CV.pdf');" class="button">View CV</button>
+  </div>
+  
   <main>
+
     <section id="portfolio">
       <div class="gallery">
 
-        <!-- Add more a elements for each image -->
-        <!--start of image 1 wrapper-->
         <div class="image-container">
-            <a href=".\IMG\yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg" class="image-link">
-                <img src=".\IMG\yuriy-kovalev-nN1HSDtKdlw-unsplash.jpg" alt="Description of image1">
-            </a>
-            <h3>POSTER</h3>
-            <p>This drawing was ugh yeah baby just proper naughty and such</p>
-        </div><!--end of image 1 wrapper-->
-
+          <h2>Review My Presentations!</h2>
+          <p>Click link to complete a Google Form!</p>
+          <button onclick="window.open('https://forms.gle/5CM6zdcaSGekoMoa7');" class="button">Comment!</button>
+        </div>
+  
         <div class="image-container">
-            <a href=".\IMG\marlowe-weingart-RbN8pwcYCyM-unsplash.jpg" class="image-link">
-                <img src=".\IMG\marlowe-weingart-RbN8pwcYCyM-unsplash.jpg" alt="Description of image2">
-            </a>
-            <h3>LEAFLET</h3>
-            <p>hedgehogs are the best i do love em so oh yeh</p>
+            <img src=".\img\clanger.png">
+            <h3>Clanger Poster</h3>
+            <p>Gained permission to host this here!</p>
+            <button onclick="window.open('./pdf/clanger.pdf');" class="button">View Clanger Poster</button>
         </div>
 
         <div class="image-container">
-            <a href=".\IMG\marlowe-weingart-RbN8pwcYCyM-unsplash.jpg" class="image-link">
-                <img src=".\IMG\marlowe-weingart-RbN8pwcYCyM-unsplash.jpg" alt="Description of image3">
-            </a>
-            <h3>BOOK RECCOMENDATIONS</h3>
-            <p>hedgehogs are the best i do love em so oh yeh</p>
+          <img src=".\img\generic.png">
+          <h3>Generic Poster</h3>
+          <p>Uses "Unsplash" images</p>
+          <button onclick="window.open('./pdf/generic.pdf');" class="button">View Generic Poster</button>
+      </div>
+
+        <div class="image-container">
+            <img src=".\img\1.png">
+            <h3>Leaflet Page 1</h3>
+            <p>First page of the fumbling forward handout</p>
+            <button onclick="window.open('./pdf/handout.pdf');" class="button">View Leaflet</button>
         </div>
 
-      </div>  <!--end of the "gallery" div containing all the "image wrappers"-->    
-    </section>
+        <div class="image-container">
+          <img src=".\img\2.png">
+          <h3>Leaflet Page 2</h3>
+          <p>Second page of the fumbling forward handout</p>
+          <button onclick="window.open('./pdf/handout.pdf');" class="button">View Leaflet</button>
+      </div>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Put prop bio here</p>
-      <a href=".\pdf\Jack Simms Full Time CV March 23.pdf" target="_blank">View My CV</a>
-      <h3>Contact Details</h3>
-      <p>Email: <a href="mailto:jacksimms77@gmail.com">jacksimms77@gmail.com</a></p>
-    </section>
+        <div class="image-container">
+            <img src=".\img\books.png">
+            <h3>Books</h3>
+            <p>These are cool books!</p>
+            <button onclick="window.open('./pdf/books.pdf');" class="button">View Book Recommendations</button>
+        </div>
+     </section>
+
   </main>
 
   <footer>
@@ -56,3 +70,5 @@
   </footer>
 </body>
 </html>
+
+
