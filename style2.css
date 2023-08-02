@@ -1,10 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Roboto', Arial, sans-serif;
   color: #333;
   line-height: 1.6;
   background-color: #f1f1f1;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,11 +45,12 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  width: 100%;
 }
 
 .video-player {
   width: 100%;
-  max-width: 560px;
+  height: 0;
   padding-bottom: 56.25%; 
   position: relative;
   margin-bottom: 2rem;
@@ -59,7 +69,8 @@ main {
   border-radius: 8px;
   margin: 1rem;
   padding: 1rem;
-  width: 300px;
+  width: 80%;
+  max-width: 300px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   text-align: center;
   transition: transform 0.3s ease;
@@ -110,6 +121,17 @@ a:hover {
   color: #777;
 }
 
+.video-player {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.video-player iframe {
+  max-width: 100%;
+  height: auto;
+}
+
 footer {
   text-align: center;
   padding: 1.5rem 0;
@@ -119,13 +141,20 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .image-container, .video-player {
-    width: 100%;
+  .image-container {
+    width: 90%;
   }
 }
 
 @media screen and (max-width: 480px) {
   main {
     padding: 1rem;
+  }
+  .image-container {
+    width: 100%;
+  }
+  header {
+    font-size: 1.8rem;
+    padding: 1rem 0;
   }
 }
