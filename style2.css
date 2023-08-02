@@ -7,6 +7,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 body {
@@ -23,17 +24,17 @@ header {
   text-align: center;
   font-size: 2.5rem;
   padding: 1.5rem 0;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #profilePhoto {
-  max-width: 200px;
+  max-width: 150px; /* Adjusted for smaller profile image */
   height: auto;
   border-radius: 50%;
-  display: block;
-  margin: auto;
-  margin-top: 2rem;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem; /* Adjusted to reduce spacing */
 }
 
 h2, p {
@@ -46,6 +47,8 @@ main {
   align-items: center;
   padding: 2rem;
   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .video-player {
@@ -69,9 +72,9 @@ main {
   border-radius: 8px;
   margin: 1rem;
   padding: 1rem;
-  width: 80%;
+  width: 90%;
   max-width: 300px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -121,37 +124,25 @@ a:hover {
   color: #777;
 }
 
-.video-player {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.video-player iframe {
-  max-width: 100%;
-  height: auto;
-}
-
 footer {
   text-align: center;
   padding: 1.5rem 0;
   margin-top: 2rem;
-  max-width: 100%;
+  max-width: 1200px;
+  width: 100%;
   border-top: 1px solid #ddd;
 }
 
 @media screen and (max-width: 768px) {
   .image-container {
-    width: 90%;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
 @media screen and (max-width: 480px) {
   main {
     padding: 1rem;
-  }
-  .image-container {
-    width: 100%;
   }
   header {
     font-size: 1.8rem;
