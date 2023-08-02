@@ -30,14 +30,14 @@ header {
 }
 
 #profilePhoto {
-  max-width: 150px; /* Adjusted for smaller profile image */
+  max-width: 150px;
   height: auto;
   border-radius: 50%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  margin-top: 1rem; /* Adjusted to reduce spacing */
+  margin-top: 1rem;
 }
 
-h2, p {
+h3, p {
   text-align: center;
 }
 
@@ -49,6 +49,7 @@ main {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  box-sizing: border-box;  /* Add this */
 }
 
 .video-player {
@@ -70,12 +71,15 @@ main {
 .image-container {
   background-color: #fff;
   border-radius: 8px;
-  margin: 1rem;
+  margin: 1rem auto;  /* Change this */
   padding: 1rem;
   width: 90%;
   max-width: 300px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.3s ease;
 }
 
@@ -96,9 +100,7 @@ main {
   border-radius: 4px;
   color: #333;
   padding: 0.5rem 1rem;
-  text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 1rem;
   margin: 1rem 0;
   cursor: pointer;
